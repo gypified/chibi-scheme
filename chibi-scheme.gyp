@@ -45,6 +45,14 @@
       'include_dirs': ['include'],
       'direct_dependent_settings': {
         'include_dirs': ['include'],
+        'defines': [
+          'SEXP_NO_INSTALL_H=1',
+          'sexp_default_module_path="<(sexp_default_module_path)"',
+          'sexp_platform="<(sexp_platform)"',
+          'sexp_release_name="<(sexp_release_name)"',
+          'sexp_so_extension="<(sexp_so_extension)"',
+          'sexp_version="<(sexp_version)"',
+        ],
       },
       'sources': [
         'bignum.c',
